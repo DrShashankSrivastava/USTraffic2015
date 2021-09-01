@@ -1,16 +1,16 @@
-# This is a sample Python script.
+"""
+Main file for US Traffic 2015 dataset challenge for OCBS Hack-IT 2021
+Data & AI Track
+"""
+# Import libraries
+from data_preprocessing import read_csv_data
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+# Datafile source directory and filename
+src = r'/Users/shashank/Documents/ocbc'
+filename_traffic = r'dot_traffic_2015.txt'
+filename_stations = r'dot_traffic_stations_2015.txt'
+raw_traffic = read_csv_data(src, filename_traffic)
+raw_stations = read_csv_data(src, filename_stations)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Garbage collection
+del src, filename_stations, filename_traffic
