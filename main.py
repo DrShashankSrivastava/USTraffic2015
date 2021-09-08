@@ -14,8 +14,8 @@ filename_traffic = r'dot_traffic_2015.txt'
 filename_stations = r'dot_traffic_stations_2015.txt'
 
 # Keeping first 100 rows only
-raw_traffic = read_raw_data(src, filename_traffic)[:100]
-raw_stations = read_raw_data(src, filename_stations)[:100]
+raw_traffic = read_raw_data(src, filename_traffic)
+raw_stations = read_raw_data(src, filename_stations)
 
 # Garbage collection
 del src, filename_stations, filename_traffic

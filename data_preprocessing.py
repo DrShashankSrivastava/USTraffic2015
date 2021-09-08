@@ -10,7 +10,8 @@ def read_raw_data(src_path: 'str', filename: 'str') -> DataFrame:
         data_list = f.readlines()
     columns = data_list[0].split(',')
     data = []
-    for i in range(1, len(data_list)):
+    # for i in range(1, len(data_list)):
+    for i in range(1, 100):
         data.append(data_list[i].split(','))
     df = DataFrame(data = data, columns = columns)
     return df
