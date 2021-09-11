@@ -14,4 +14,6 @@ def read_raw_data(src_path: 'str', filename: 'str') -> DataFrame:
     for i in range(1, 100):
         data.append(data_list[i].split(','))
     df = DataFrame(data = data, columns = columns)
+    df = df.replace(r'\n','', regex=True)
+    df = df.replace('"', '', regex=True)
     return df
