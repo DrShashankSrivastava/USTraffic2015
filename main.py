@@ -2,14 +2,14 @@
 Main file for US Traffic 2015 dataset challenge for OCBS Hack-IT 2021
 Data & AI Track
 """
-# Import libraries
+#%% Import libraries
 # <editor-fold desc="Import Libraries">
 import pandas as pd
 import numpy as np
 from data_preprocessing import read_raw_data
 # </editor-fold>
 
-# Datafile source directory and filename
+#%% Datafile source directory and filename
 # <editor-fold desc="Datafile source directory and filename">
 src = r'/Users/shashank/Documents/ocbc'
 
