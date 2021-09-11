@@ -4,7 +4,7 @@ Data & AI Track
 """
 # Import libraries
 import pandas as pd
-
+import numpy as np
 from data_preprocessing import read_raw_data
 
 # Datafile source directory and filename
