@@ -20,5 +20,20 @@ raw_stations = read_raw_data(src, filename_stations)
 # Garbage collection
 del src, filename_stations, filename_traffic
 
-raw_traffic.to_csv(r'/Users/shashank/Documents/ocbc/raw_traffic_100.csv')
-raw_stations.to_csv(r'/Users/shashank/Documents/ocbcraw_stations_100.csv')
+#%% Inspect raw_traffic dataset
+for col in raw_traffic.columns:
+    print(col)
+
+print(raw_traffic.head())
+
+# Check if 'restrictions' columns has any value
+print(np.unique(raw_traffic['restrictions']))
+
+# Drop reduntant or empty columns
+raw_traffic = raw_traffic.drop(columns=['date', 'direction_of_travel_name', 
+                                'functional_classification_name', 'restrictions'])
+
+## Datatype conversion to numeric values
+for col in raw_traffic.columns:
+    if col not in ['functional_classification', 'station_id']:
+        raw_traffic[col] = pd.to_numeric(raw_traffic[col], errors='coerce')
