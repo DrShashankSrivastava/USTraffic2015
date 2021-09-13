@@ -21,7 +21,7 @@ This notebook has been written with Python 3.7 and is forward compatible. The fo
 
 <h3>Features</h3>
 
-The notebook readily contains data visualization in form of printing the pandas DataFrame head, printing column names and multiple plots on features selected such as time_of_day, day_of_week and traffic volumne counted between hours to name some.
+The notebook readily contains data visualization in form of printing the pandas DataFrame head, printing column names and multiple plots on features selected such as time_of_day, day_of_week and traffic volume counted between hours to name some.
 
 A function read_raw_date is defined to read and clean the data.txt files from a specified path and export it as a pandas DataFrame.
 
