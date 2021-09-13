@@ -1,5 +1,5 @@
 # USTraffic2015
-US Traffic 2015 dataset
+US Traffic 2015 dataset solution
 
 Written by: Shashank Srivastava, PhD (Data Scientist)
 
