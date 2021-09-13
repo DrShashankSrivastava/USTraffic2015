@@ -8,14 +8,14 @@ Written by: Shashank Srivastava, PhD (Data Scientist)
 main_notebook.ipynb is a Python notebook containing codes, results and analysis of US Traffic 2015 dataset (https://www.kaggle.com/jboysen/us-traffic-2015).
 This notebook has been written with Python 3.7 and is forward compatible. The following native Python libraries and packages with version number have used in this code:
 
-os
-time
-warnings
-pandas 1.0.0
-numpy 1.18.5
-matplotlib 3.2.2
+<br>os
+<br>time
+<br>warnings
+<br>pandas 1.0.0
+<br>numpy 1.18.5
+<br>matplotlib 3.2.2
 
-The raw data set has been read from a local path and which must be modified to re-run the code on a different system.
+<br>The raw data set has been read from a local path and which must be modified to re-run the code on a different system.
 
 ![image](https://user-images.githubusercontent.com/35698903/133014279-1baa9e07-892a-437a-85c2-f4205d2e7e5f.png)
 
